@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sample Template for Jinja</title>
+  <style>
+
+table[class=table-striped] td,
+table[class=table-striped] th {
+     border: 1px solid #eceeef !important;;
+}
+
+table[class=table-striped] tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+table[class=table-hover] tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+@media only screen and (max-width: 780px) {
+  table[class=body] h1 {
+    font-size: 28px !important;
+    margin-bottom: 10px !important;
+  }
+
+table[class=body] p,
+table[class=body] ul,
+table[class=body] ol,
+table[class=body] td,
+table[class=body] span,
+table[class=body] a {
+    font-size: 16px !important;
+  }
+
+  table[class=body] .wrapper,
+table[class=body] .article {
+    padding: 10px !important;
+  }
+
+  table[class=body] .content {
+    padding: 0 !important;
+  }
+
+  table[class=body] .container {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  table[class=body] .main {
+    border-left-width: 0 !important;
+    border-radius: 0 !important;
+    border-right-width: 0 !important;
+  }
+
+  table[class=body] .btn table {
+    width: 100% !important;
+  }
+
+  table[class=body] .btn a {
+    width: 100% !important;
+  }
+
+  table[class=body] .img-responsive {
+    height: auto !important;
+    max-width: 100% !important;
+    width: auto !important;
+  }
+}
+@media all {
+  .ExternalClass {
+    width: 100%;
+  }
+
+  .ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+    line-height: 100%;
+  }
+
+  .apple-link a {
+    color: inherit !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    text-decoration: none !important;
+  }
+
+  .btn-primary table td:hover {
+    background-color: #d5075d !important;
+  }
+
+  .btn-primary a:hover {
+    background-color: #d5075d !important;
+    border-color: #d5075d !important;
+  }
+}
+</style></head>
+  <body class style="background-color: #eaebed; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; background-color: #eaebed; width: 100%;" width="100%" bgcolor="#eaebed">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container" style="font-family: sans-serif; font-size: 14px; vertical-align: top; display: block; max-width: 780px; padding: 10px; width: 780px; Margin: 0 auto;" width="780" valign="top">
+          <div class="header">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; width: 100%;" width="100%">
+              <tr>
+                <td class="align-center" style="font-family: sans-serif; font-size: 14px; vertical-align: top; text-align: center;" valign="top" align="center">
+                  <svg height="100" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 976 649.5" style="enable-background:new 0 0 976 649.5;" xml:space="preserve">
+<style type="text/css">
+    .st0{fill:#3A2D7D;}
+    .st1{fill:#FFFFFF;}
+    .st2{fill:none;}
+    .st3{fill:#E66F25;}
+    .st4{fill:#3A2E7D;}
+    .st5{fill:#EFB41D;}
+    .st6{fill:#E22028;}
+</style>
+<g id="NSE_Logo">
+    <g id="Group_11">
+        <g id="Group_10">
+            <path id="Path_5" class="st0" d="M519.6,348.6l-68.3-108.9h-32.1v170h35.9l-1.9-108.2l67.7,108.2h31.2v-170h-35.9L519.6,348.6z"
+                />
+            <path id="Path_6" class="st0" d="M662.5,306.8l-17.2-3.7c-15-3.1-23.1-5.3-26.5-10.9c-1.1-1.8-1.7-3.8-1.6-5.9
+                c-0.1-2.2,0.4-4.4,1.6-6.2c5.6-10.6,23.1-11.2,26.5-11.2c16.7-0.4,32.1,8.5,40.2,23.1l1.6,2.5l29.9-22.1l-1.6-2.2
+                c-15.6-22.3-41.4-35.2-68.6-34.3c-39.9,0-56.1,20-61.1,28.4c-4.3,7.8-6.6,16.6-6.5,25.6c-0.3,17.2,9.4,33.1,25,40.5
+                c7.6,3.7,15.7,6.2,24,7.5l21.2,4.7l3.7,0.9c7.5,1.6,19,4.1,23.4,9.7c1.6,2.4,2.5,5.2,2.5,8.1c0,14-15.6,17.5-17.5,17.8
+                c-3.8,0.8-7.7,1-11.5,0.9c-29.6,0-42.1-13.4-48.7-23.4l-1.6-2.2l-30.2,20.9l1.2,2.2c2.3,4.1,5.2,7.8,8.4,11.2
+                c10.9,11.6,31.5,25.3,66.1,25.3c28.7,0,46.2-9.7,55.5-17.8c11.4-9.4,17.7-23.6,17.2-38.4c0.7-10.9-3.1-21.5-10.3-29.6
+                C696.2,315.2,678.4,310.2,662.5,306.8z"/>
+            <path id="Path_7" class="st0" d="M774.4,376.7V338h75.5v-32.1h-75.5v-33.1h82.7v-33.1H738.9v170H863v-33.1H774.4z"/>
+        </g>
+        <path id="Rectangle_8" class="st1" d="M240.8,268.5l56.2,56.2l-56.2,56.2l-56.2-56.2L240.8,268.5z"/>
+        <path id="Rectangle_9" class="st2" d="M184.5,324.8l56.2-56.2l56.2,56.2l-56.2,56.2L184.5,324.8z"/>
+        <path id="Path_8" class="st3" d="M331.3,235l-90.4-37.4L150.4,235l90.4,34L331.3,235z"/>
+        <path id="Path_9" class="st4" d="M296.5,325.4l34.3-90.4l-90.4,34L296.5,325.4z"/>
+        <path id="Path_10" class="st5" d="M240.3,380.6l90.4,34l-34.3-90.1L240.3,380.6z"/>
+        <path id="Path_11" class="st5" d="M240.9,268.9l-90.4-34l34.3,90.4L240.9,268.9z"/>
+        <path id="Path_12" class="st6" d="M150.4,235c-0.3-0.3-37.4,89.6-37.4,89.6l37.4,90l34.3-89.6L150.4,235z"/>
+        <path id="Path_13" class="st5" d="M184.7,324.4l-34.3,90.1l90.4-34L184.7,324.4z"/>
+        <path id="Path_14" class="st6" d="M150.4,414.6l90.4,37.4l90.4-37.4l-90.4-34L150.4,414.6z"/>
+        <path id="Path_15" class="st3" d="M330.5,235l-34.3,90l34.3,89.6l37.5-89.7L330.5,235z"/>
+    </g>
+</g>
+</svg>
+
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="content" style="box-sizing: border-box; display: block; Margin: 0 auto; max-width: 780px; padding: 10px;">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">This is preheader text. Some clients will show this text as a preview.</span>
+            <table role="presentation" class="main" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; background: #ffffff; border-radius: 3px; width: 100%;" width="100%">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper" style="font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px;" valign="top">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; width: 100%;" width="100%">
+                    <tr>
+                      <td>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Hi there,</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Sometimes you just want to send a simple HTML email with a simple design and clear call to action. This is it.</p>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; box-sizing: border-box; min-width: 100%; width: 100%;" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="left" style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;" valign="top">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: auto; width: auto;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; border-radius: 5px; text-align: center; background-color: #ec0867;" valign="top" align="center" bgcolor="#ec0867"> <a href="https://postdrop.io" target="_blank" style="border: solid 1px #ec0867; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-decoration: none; text-transform: capitalize; background-color: #ec0867; border-color: #ec0867; color: #ffffff;">Call To Action</a> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Remember to add more content here before you send.</p>
+
+
+
+
+
+                        <table class="table-striped" style="text-align: center; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; width: 100%;" width="100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+
+            <!-- START FOOTER -->
+            <div class="footer" style="clear: both; Margin-top: 10px; text-align: center; width: 100%;">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; width: 100%;" width="100%">
+                <tr>
+                  <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; color: #9a9ea6; font-size: 12px; text-align: center;" valign="top" align="center">
+                    <span class="apple-link" style="color: #9a9ea6; font-size: 12px; text-align: center;">The email is sent by Automation Team</span>
+                    <br>
+                    <span class="apple-link" style="color: #9a9ea6; font-size: 12px; text-align: center;">Using the Ansible Automation Platform</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- END FOOTER -->
+
+          <!-- END CENTERED WHITE CONTAINER -->
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
